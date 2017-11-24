@@ -2,7 +2,7 @@
 var mongo = require('mongodb');
 
 // Cria um wrapper que evita que a conexão seja feita desnecessariamente.
-var connMondoDB = function() {
+var connectionDB = function() {
   var db = new mongo.Db(
     'got',
     new mongo.Server(
@@ -17,5 +17,5 @@ var connMondoDB = function() {
 }
 
 module.exports = function() {
-  return connMondoDB;
+  return connectionDB;
 } 
