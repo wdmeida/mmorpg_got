@@ -36,25 +36,33 @@
 						<input type="text" name="usuario" id="usuario" placeholder="Usuário" class="form-control" autocomplete="off" />
 						<input type="password" name="senha" id="senha" placeholder="Senha" class="form-control" />
 						<button type="submit" class="btn btn-success">Entrar</button>
-						<button type="button" class="btn btn-info">Cadastro</button>
+						<button type="button" class="btn btn-info" id="btn_cadastro">Cadastro</button>
 					</div>
 				</form>
 			</div>
 			
 		</nav>
 
-	    <div class="container">
-	    	<div class="row">
-	    		<div class="col-md-2"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
 
-	    		<div class="col-md-8">
-					<img src="images/game_of_thrones_logo.jpg" />
+				<div class="col-md-8">
+				<img src="images/game_of_thrones_logo.jpg" />
+			</div>
+
+				<div class="col-md-2"></div>
 				</div>
-
-	    		<div class="col-md-2"></div>
-		    	</div>
-	    	</div>
-	    </div>	
+			</div>
+		</div>	
 		
+		<script>
+			$(document).ready(function() {
+				$('#btn_cadastro').click(function() {
+					window.location.href = '/cadastro';
+				});
+			});
+		</script>
+
 	</body>
 </html>
